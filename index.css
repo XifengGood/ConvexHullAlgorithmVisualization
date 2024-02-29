@@ -1,0 +1,224 @@
+.banner {
+    height: 3rem;
+    background-color: antiquewhite;
+}
+
+button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.4s ease-in;
+    cursor: pointer;
+}
+
+.banner .tools {
+    float: left;
+    height: 100%;
+    display: flex;
+}
+
+.banner .tools button {
+    margin: 0.5rem;
+    flex: 1;
+    width: 2rem;
+}
+
+.banner .tools button {
+    background-color: white;
+    color: black;
+    border: 2px solid #4caf50;
+    stroke: black;
+    fill: black;
+}
+
+.banner .tools button:hover {
+    background-color: #4caf50;
+    color: white;
+    stroke: white;
+    fill: white;
+}
+
+.banner .tools button:focus {
+    background-color: #4caf50;
+    color: white;
+    fill: white;
+    stroke: white;
+}
+
+.banner .run {
+    width: 3rem;
+    height: 3rem;
+    float: left;
+    margin-left: calc(50% - 6rem - 1.5rem);
+}
+
+.banner .run button {
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem;
+}
+
+.banner .run button {
+    background-color: #FFFFFF00;
+    color: black;
+    border: none;
+}
+
+.banner .run button:hover {
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.banner .run button:focus {
+    border: 1px solid black;
+    border-radius: 1rem;
+
+}
+
+.banner .data {
+    float: right;
+    height: 100%;
+    display: flex;
+}
+
+.banner .data button {
+    margin: 0.5rem;
+    flex: 1;
+    width: 2rem;
+}
+
+.banner .data button {
+    background-color: #FFFFFF00;
+    fill: black;
+    stroke: black;
+    border: none;
+}
+
+.banner .data button:hover {
+    background-color: #555555;
+    fill: white;
+    stroke: white;
+}
+
+.banner .data button:focus {
+    background-color: #FFFFFF00;
+    fill: black;
+    stroke: black;
+}
+
+.banner .data input {
+    display: none
+}
+
+
+.optionPanel {
+    position: fixed;
+    right: 0rem;
+    padding-left: 0px;
+    margin-top: 0px;
+    background-color: #e3bf94e0;
+    width: 20rem;
+    height: 100vh;
+    transition: right 0.5s ease-in-out;
+    color: black;
+}
+
+.optionPanel h2 {
+    padding-left: 1rem;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.options li {
+    flex: 1;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.options li label:nth-child(1) {
+    display: inline-block;
+    width: 45%;
+}
+
+.options li input {
+    display: inline-block;
+    width: 45%;
+}
+
+.options li input[type='checkBox']:hover{
+    cursor: pointer;
+}
+.options li input[type='checkBox'] {
+    position: relative;
+    display: inline-block;
+    height: 2rem;
+    width: 45%;
+    appearance: none;
+    border: 0.1rem solid #555555;
+    margin: auto;
+    bottom: -0.6rem;
+    border-radius: 1rem;
+    fill: #555555;
+    background-image: url(./svg/Off.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    transition-duration: 0.5s;
+}
+.options li input[type='checkBox']:checked{
+    background-image: url(./svg/On.svg);
+    background-position: left;
+    border-color: black;
+}
+
+.optionPanel .expandToggle{
+    position: relative;
+    float: left;
+    left: -2rem;
+    width: 2rem;
+    height: 2rem;
+    fill: rgba(40, 38, 35, 0.901);
+}
+
+.optionPanel.expanding {
+    right: 0rem;
+}
+
+:not(.expanding).optionPanel {
+    right: -20rem;
+}
+
+.options li select {
+    background-color: #FFFFFF00;
+    border-radius: 0px;
+    width: 45%;
+    height: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=range] {
+    appearance: none;
+    background: #ebeff4 no-repeat;
+    border-radius: 0.1rem;
+    height: 0.1rem;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    cursor: default;
+    top: 0;
+    height: 1rem;
+    width: 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #006eb3;
+}
+
+main canvas {
+    margin: auto;
+}
